@@ -27,6 +27,20 @@ export default function _layout() {
                         headerShown: true
                     }}
                 />
+                <Stack.Screen
+                    name="peso-ideal"
+                    options={{
+                        title: 'Peso Ideal',
+                        headerShown: true
+                    }}
+                />
+                <Stack.Screen
+                    name="agua"
+                    options={{
+                        title: 'Água Diária',
+                        headerShown: true
+                    }}
+                />
             </Stack>
         </>
     )
