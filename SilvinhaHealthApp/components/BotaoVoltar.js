@@ -8,8 +8,7 @@ export default function BotaoVoltar() {
             onPress={() => router.back()}
         >
             <Text style={styles.backButtonText}>← Voltar</Text>
-        </TouchableOpacity>
-    );
+        </TouchableOpacity>);
 }
 const styles = StyleSheet.create({
     backButton: {
@@ -24,4 +23,4 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: '600',
     },
-});n
+});''

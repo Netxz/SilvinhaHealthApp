@@ -14,7 +14,6 @@
         </View>
     )
 }
-
 // app/agua.js
 import React, { useState } from 'react';
 import {
@@ -26,7 +25,6 @@ import {
     Alert,
     ScrollView,
 } from 'react-native';
-
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { calcularAgua } from '../utils/calculos';
 import BotaoVoltar from '../components/BotaoVoltar';
@@ -76,7 +74,8 @@ export default function AguaScreen() {
                     {resultado && (
                         <View style={styles.resultBox}>
                             <Text style={styles.resultLabel}>Recomendação
-                                diária:</Text><Text style={styles.resultValue}>{resultado.ml} ml</Text>
+                                diária:</Text>
+                            <Text style={styles.resultValue}>{resultado.ml} ml</Text>
                             <Text style={styles.resultSecondary}>({resultado.l}
                                 litros)</Text>
                             <View style={styles.tipsContainer}>
@@ -192,7 +191,8 @@ const styles = StyleSheet.create({
         paddingTop: 15,
         borderTopWidth: 1,
         borderTopColor: '#eee',
-    }, tipsTitle: {
+    },
+    tipsTitle: {
         fontSize: 16,
         fontWeight: '600',
         color: '#333',

@@ -8,10 +8,10 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
-
 const menuData = [
     {
-        id: '1', title: 'Calculadora de IMC',
+        id: '1',
+        title: 'Calculadora de IMC',
         route: '/imc',
         color: '#FF6B6B',
         icon: '📊'
@@ -38,7 +38,6 @@ const menuData = [
         icon: '🔥'
     },
 ];
-
 export default function HomeScreen() {
     const renderMenuItem = ({ item }) => (
         <TouchableOpacity
@@ -51,12 +50,11 @@ export default function HomeScreen() {
         </TouchableOpacity>
     );
     return (
-        <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
-                <Text style={styles.title}>🌸 Silvinha Health App</Text>
-                <Text style={styles.subtitle}>Cuide da sua saúde com
-                    carinho</Text>
-            </View>
+        <SafeAreaView style={styles.container}><View style={styles.header}>
+            <Text style={styles.title}>🌸 Silvinha Health App</Text>
+            <Text style={styles.subtitle}>Cuide da sua saúde com
+                carinho</Text>
+        </View>
             <FlatList
                 data={menuData}
                 renderItem={renderMenuItem}
@@ -67,7 +65,6 @@ export default function HomeScreen() {
         </SafeAreaView>
     );
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,

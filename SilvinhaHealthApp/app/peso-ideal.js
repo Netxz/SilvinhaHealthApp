@@ -1,5 +1,4 @@
 const [sexo, setSexo] = useState(null);
-
 <TouchableOpacity
     style={[
         styles.sexButton,
@@ -15,7 +14,6 @@ const [sexo, setSexo] = useState(null);
         Masculino
     </Text>
 </TouchableOpacity>
-
 import React, { useState } from 'react';
 import {
     View,
